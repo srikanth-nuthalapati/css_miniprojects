@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile_card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: #d3d2d2;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 24px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 24px 24px 0 0;
+            background-color: blue;
+            height: 150px;
+            width: 100%;
+        }
+        .container .name{
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .image{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            padding: 5px;
+            padding-top: 10px;
+        }
+        .image .inner{
+            width: 99%;
+            height: 99%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            filter: contrast(120%);
+        }
+        .buttons{
+            padding: 5px;
+            display: flex;
+        }
+        .buttons a{
+            margin : 0 6px;
+            text-decoration: none;
+            border-radius: 50%;
+            color:white;
+            background-color: rgb(75, 75, 214);
+        }
+        .buttons i{
+            padding: 5px;
+            font-size:18px;
+        }
+        .buttons i:hover{
+           box-shadow: 0 0 20px 2px rgb(99, 69, 69);
+        }
+        .lorem{
+            padding: 10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="passport photo.jpg" alt="" class="inner">
+        </div>
+        <div class="name">Srikanth</div>
+        <div class="buttons">
+            <a href="#">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" style="background-color: rgb(245, 85, 57);">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="#" style="background-color: rgb(81, 154, 184);">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" style="background-color: red;">
+                <i class='bx bxl-youtube'></i>
+            </a>
+        </div>
+        <div class="lorem">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aperiam minus in ipsa voluptates nemo assumenda quae expedita numquam voluptate.</p>
+        </div>
+    </div>
+</body>
+</html>
